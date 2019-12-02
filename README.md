@@ -2,7 +2,7 @@
 
 ## Pré-requis
 
-* avoir composer installé (gestionnaire de package php)
+* avoir composer installé (gestionnaire de cpackage php)
 * avoir yarn installé (gestionnaire de packages, surcharge npm)
 
 ## Installation

@@ -8,13 +8,18 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Azul: suite de tp2 {##}{ ## controller_name }}! symfony ✅</h1>
+<p>
+    Pour cette première version de site, le client nous demande d'afficher 3 teasers de thèses.
+    Après discussions, cette structure se retrouvera probablement dans d’autres pages du site.
+    Je te demande donc de créer un template 'these' qui ne contient que la structure d'une thèse
+    générique et qu'on pourra inclure facilement autant de fois qu'on veut partout dans le site
+</p>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/nabil/Desktop/responsiveskeleton-master/src/Controller/HomePageController.php'|file_link(0) }}">src/Controller/HomePageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/nabil/Desktop/responsiveskeleton-master/templates/home_page/index.html.twig'|file_link(0) }}">templates/home_page/index.html.twig</a></code></li>
-    </ul>
-</div>
+<h1>Liste des articles de mon super blog</h1>
+
+    {{include('teaser/index.html.twig',{title:'le changement climatique', description:'problematique', email: 'nabil@gmail.com'}) }}
+    {{include('teaser/index.html.twig',{title:'gaz à effet de serre ', description:'impact des transport sur ...', email: 'bb@yahoo.fr'}) }}
+    {{include('teaser/index.html.twig',{title:'la congestion ', description:'remedier au flux de transport' , email: 'aaa@live.fr'}) }}
+
 {% endblock %}
